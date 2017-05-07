@@ -1,5 +1,5 @@
  <?php
-    $title = "ddrguy - Activate You Account";
+    $title = "ddrguy - Activate Your Account";
     require("./top.php");
 		  
 	?>
