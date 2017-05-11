@@ -17,8 +17,6 @@
 	data: {msgid:msgid},
     success: function(data) {
       $('#pre_load_msg').html(data);
-      //$('#result').html(data);
-	  //("#result").html(data).load(url);
 	  
     },
     complete: function() {
@@ -27,29 +25,3 @@
     }
   });
 })();
-
-/*var msgid = getUrlVars()["msgid"];
-	
-	function getUrlVars() {
-	var vars = {};
-	var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-	vars[key] = value;
-	});
-	return vars;
-	}
-	
-    $.ajax({
-            url: 'pre_load.php',
-            type: 'GET',   //change type to POST rather than GET because this POST method of sending data
-            data: {msgid:msgid},
-            success: function(data) {
-                 //called when successful
-                 $('#pre_load_msg').html(data);
-                 //alert(msgid);
-            },
-            error: function(e) {
-                 //called when there is an error
-                 console.log(e.message);
-                 alert("failed");
-            }
-    });*/
