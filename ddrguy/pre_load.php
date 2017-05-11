@@ -17,12 +17,8 @@ $msgid = $_GET['msgid'];	// javascript variable.
 				$update_row = mysqli_fetch_assoc($update_query);
 				$dbupdateID = $update_row['id'];
 				// Update the database message as read.
-					//mysqli_query($con, "UPDATE messages SET open='1' WHERE receiver_id='".$userid."' AND msg_id='".$getmsgid."'")or die(mysqli_error($con));
-					mysqli_query($con, "UPDATE tbl_private_message SET read_unread='1' WHERE msg_id='".$msgid."'");
-					/*echo "<script>
-							window.location.href = '$site/read_msg?msgid=$msgid&fromid=$from_id'
-						  </script>";*/
-				// end of updating the read message table.
+				mysqli_query($con, "UPDATE tbl_private_message SET read_unread='1' WHERE msg_id='".$msgid."'");
+					
 			}
 ?>
 
